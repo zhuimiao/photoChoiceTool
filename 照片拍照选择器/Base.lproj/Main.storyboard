@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9M-QY-swl">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1uQ-Q5-Bgb"/>
+                                    <constraint firstAttribute="width" constant="200" id="eth-Wo-NgN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="dengziqi"/>
+                                <connections>
+                                    <action selector="changeImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76j-sG-oEs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击选择相片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49r-sU-GCu">
+                                <rect key="frame" x="249" y="418" width="102" height="20.5"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="OAw-1X-mwu"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="WJ7-by-dUy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="49r-sU-GCu" firstAttribute="top" secondItem="m9M-QY-swl" secondAttribute="bottom" constant="18" id="Iwl-1h-egx"/>
+                            <constraint firstItem="m9M-QY-swl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBV-RB-cGC"/>
+                            <constraint firstItem="m9M-QY-swl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oMK-Hi-V4a"/>
+                            <constraint firstItem="49r-sU-GCu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t0s-ew-vlW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgButton" destination="m9M-QY-swl" id="eDd-9S-e7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dengziqi" width="201" height="254"/>
+    </resources>
+</document>
